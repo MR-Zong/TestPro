@@ -9,7 +9,7 @@
 #import "ZGTaskManager.h"
 
 
-static ZGTaskManager *taskManager =nil;
+static ZGTaskManager *taskManager_ ;
 
 @interface ZGTaskManager ()
 
@@ -23,23 +23,23 @@ static ZGTaskManager *taskManager =nil;
 
 + (instancetype)shareTaskManager
 {
-    if (!taskManager) {
-        taskManager = [[self alloc] init];
+    if (!taskManager_) {
+        taskManager_ = [[self alloc] init];
     }
-    return taskManager;
+    return taskManager_;
 }
 
 + (instancetype)allocWithZone:(struct _NSZone *)zone
 {
 
     static dispatch_once_t onceToken;
-    if (!taskManager) {
+    if (!taskManager_) {
         dispatch_once(&onceToken, ^{
-            taskManager = [[ZGTaskManager alloc] init];
+            taskManager_ = [super allocWithZone:zone];
         });
     }
     
-    return taskManager;
+    return taskManager_;
 }
 
 - (void)addTaskWithBlock:(Task)task
@@ -54,20 +54,25 @@ static ZGTaskManager *taskManager =nil;
 
 - (void)onTimer
 {
+    NSLog(@"tasks.count %zd",self.tasks.count);
     if (self.tasks.count > 0) {
         
-        for (Task task in self.tasks) {
+        for (int i =0 ; i<self.tasks.count; i++) {
             
-            if (!task) {
+            Task task = self.tasks[i];
+            if (task) {
                 if (!task()) {
+                    
                     [self.tasks removeObject:task];
                 }
             }
-        } 
+        }
+        
         
     }else {
         [self.timer invalidate];
         self.timer = nil;
+        NSLog(@"timer invalidate");
     }
 }
 

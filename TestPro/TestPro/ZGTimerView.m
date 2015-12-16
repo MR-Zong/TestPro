@@ -47,13 +47,14 @@
     
     UILabel *timeLabel1 = [[UILabel alloc] init];
     self.timeLabel1 = timeLabel1;
+    self.timeLabel1.backgroundColor = [UIColor greenColor];
     self.timeLabel1.frame = CGRectMake(80, 100, 60, 30);
     __weak ZGTimerView *weakSelf = self;
+    self.timeLabel1.text = [self timeStrWithNumber:self.timeIntevel[0]];
     [self.taskManager addTaskWithBlock:^BOOL{
         ZGTimeIntevel *timeIntevel = weakSelf.timeIntevel[0];
         timeIntevel.intevel--;
         weakSelf.timeLabel1.text = [weakSelf timeStrWithNumber:timeIntevel];
-        
         if (timeIntevel.intevel <= 0) {
             return NO;
         }else {
@@ -62,10 +63,15 @@
         
     }];
     
+    
+    
+    
     [self addSubview:timeLabel1];
     
     UILabel *timeLabel2 = [[UILabel alloc] init];
     self.timeLabel2 = timeLabel2;
+    self.timeLabel2.backgroundColor = [UIColor whiteColor];
+    self.timeLabel2.text = [self timeStrWithNumber:self.timeIntevel[1]];
     [self.taskManager addTaskWithBlock:^BOOL{
         ZGTimeIntevel *timeIntevel = weakSelf.timeIntevel[1];
         timeIntevel.intevel--;
@@ -81,9 +87,13 @@
     self.timeLabel2.frame = CGRectMake(160, 100, 60, 30);
     [self addSubview:timeLabel2];
     
+    
+    
     UILabel *timeLabel3 = [[UILabel alloc] init];
     self.timeLabel3 = timeLabel3;
+    self.timeLabel3.backgroundColor = [UIColor whiteColor];
     self.timeLabel3.frame = CGRectMake(80, 150, 60, 30);
+    self.timeLabel3.text = [self timeStrWithNumber:self.timeIntevel[2]];
     [self.taskManager addTaskWithBlock:^BOOL{
         ZGTimeIntevel *timeIntevel = weakSelf.timeIntevel[2];
         timeIntevel.intevel--;
@@ -97,9 +107,13 @@
         
     }];    [self addSubview:timeLabel3];
     
+    
+    
     UILabel *timeLabel4 = [[UILabel alloc] init];
     self.timeLabel4 = timeLabel4;
+    self.timeLabel4.backgroundColor = [UIColor greenColor];
     self.timeLabel4.frame = CGRectMake(160, 150, 60, 30);
+    self.timeLabel4.text = [self timeStrWithNumber:self.timeIntevel[3]];
     [self.taskManager addTaskWithBlock:^BOOL{
         ZGTimeIntevel *timeIntevel = weakSelf.timeIntevel[3];
         timeIntevel.intevel--;
