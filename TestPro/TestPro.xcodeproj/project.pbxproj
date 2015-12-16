@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF0042041C1E50DF0085449F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0042031C1E50DF0085449F /* main.m */; };
+		EF0042071C1E50DF0085449F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0042061C1E50DF0085449F /* AppDelegate.m */; };
+		EF00420A1C1E50DF0085449F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0042091C1E50DF0085449F /* ViewController.m */; };
+		EF00420D1C1E50DF0085449F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF00420B1C1E50DF0085449F /* Main.storyboard */; };
+		EF00420F1C1E50DF0085449F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF00420E1C1E50DF0085449F /* Assets.xcassets */; };
+		EF0042121C1E50DF0085449F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF0042101C1E50DF0085449F /* LaunchScreen.storyboard */; };
+		EF00421D1C1E50DF0085449F /* TestProTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF00421C1C1E50DF0085449F /* TestProTests.m */; };
+		EF0042281C1E50DF0085449F /* TestProUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0042271C1E50DF0085449F /* TestProUITests.m */; };
+		EF0042391C1E51350085449F /* ZGPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0042381C1E51350085449F /* ZGPerson.m */; };
+		EF00423D1C1E64E40085449F /* ZGEmotionFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EF00423C1C1E64E40085449F /* ZGEmotionFlowLayout.m */; };
+		EF0042431C1EC2BD0085449F /* ZGCoreTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0042421C1EC2BD0085449F /* ZGCoreTextView.m */; };
+		EF19C3951C2149A30094ABCF /* ZGDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF19C3941C2149A30094ABCF /* ZGDetailView.m */; };
+		EF19C3981C2161100094ABCF /* ZGTimerView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF19C3971C2161100094ABCF /* ZGTimerView.m */; };
+		EF19C39E1C2173870094ABCF /* ZGTimeIntevel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF19C39D1C2173870094ABCF /* ZGTimeIntevel.m */; };
+		EF19C3A21C217FB90094ABCF /* ZGTaskManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EF19C3A11C217FB90094ABCF /* ZGTaskManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF0042191C1E50DF0085449F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF0041F71C1E50DF0085449F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF0041FE1C1E50DF0085449F;
+			remoteInfo = TestPro;
+		};
+		EF0042241C1E50DF0085449F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF0041F71C1E50DF0085449F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF0041FE1C1E50DF0085449F;
+			remoteInfo = TestPro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF0041FF1C1E50DF0085449F /* TestPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF0042031C1E50DF0085449F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF0042051C1E50DF0085449F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EF0042061C1E50DF0085449F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EF0042081C1E50DF0085449F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EF0042091C1E50DF0085449F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EF00420C1C1E50DF0085449F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF00420E1C1E50DF0085449F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF0042111C1E50DF0085449F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF0042131C1E50DF0085449F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF0042181C1E50DF0085449F /* TestProTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestProTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF00421C1C1E50DF0085449F /* TestProTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestProTests.m; sourceTree = "<group>"; };
+		EF00421E1C1E50DF0085449F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF0042231C1E50DF0085449F /* TestProUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestProUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF0042271C1E50DF0085449F /* TestProUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestProUITests.m; sourceTree = "<group>"; };
+		EF0042291C1E50DF0085449F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF0042371C1E51350085449F /* ZGPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGPerson.h; sourceTree = "<group>"; };
+		EF0042381C1E51350085449F /* ZGPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGPerson.m; sourceTree = "<group>"; };
+		EF00423B1C1E64E40085449F /* ZGEmotionFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGEmotionFlowLayout.h; sourceTree = "<group>"; };
+		EF00423C1C1E64E40085449F /* ZGEmotionFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGEmotionFlowLayout.m; sourceTree = "<group>"; };
+		EF00423E1C1EBDE40085449F /* ZGCoreTextLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGCoreTextLabel.h; sourceTree = "<group>"; };
+		EF00423F1C1EBDE40085449F /* ZGCoreTextLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGCoreTextLabel.m; sourceTree = "<group>"; };
+		EF0042411C1EC2BD0085449F /* ZGCoreTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGCoreTextView.h; sourceTree = "<group>"; };
+		EF0042421C1EC2BD0085449F /* ZGCoreTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGCoreTextView.m; sourceTree = "<group>"; };
+		EF19C3931C2149A30094ABCF /* ZGDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGDetailView.h; sourceTree = "<group>"; };
+		EF19C3941C2149A30094ABCF /* ZGDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGDetailView.m; sourceTree = "<group>"; };
+		EF19C3961C2161100094ABCF /* ZGTimerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGTimerView.h; sourceTree = "<group>"; };
+		EF19C3971C2161100094ABCF /* ZGTimerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGTimerView.m; sourceTree = "<group>"; };
+		EF19C39C1C2173870094ABCF /* ZGTimeIntevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGTimeIntevel.h; sourceTree = "<group>"; };
+		EF19C39D1C2173870094ABCF /* ZGTimeIntevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGTimeIntevel.m; sourceTree = "<group>"; };
+		EF19C3A01C217FB90094ABCF /* ZGTaskManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGTaskManager.h; sourceTree = "<group>"; };
+		EF19C3A11C217FB90094ABCF /* ZGTaskManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGTaskManager.m; sourceTree = "<group>"; };
+		EFD5C3E01C20076A00F02AE4 /* JBoImageTextLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBoImageTextLabel.h; sourceTree = "<group>"; };
+		EFD5C3E11C20076A00F02AE4 /* JBoImageTextLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBoImageTextLabel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF0041FC1C1E50DF0085449F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF0042151C1E50DF0085449F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF0042201C1E50DF0085449F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF0041F61C1E50DF0085449F = {
+			isa = PBXGroup;
+			children = (
+				EF0042011C1E50DF0085449F /* TestPro */,
+				EF00421B1C1E50DF0085449F /* TestProTests */,
+				EF0042261C1E50DF0085449F /* TestProUITests */,
+				EF0042001C1E50DF0085449F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF0042001C1E50DF0085449F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF0041FF1C1E50DF0085449F /* TestPro.app */,
+				EF0042181C1E50DF0085449F /* TestProTests.xctest */,
+				EF0042231C1E50DF0085449F /* TestProUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF0042011C1E50DF0085449F /* TestPro */ = {
+			isa = PBXGroup;
+			children = (
+				EF0042351C1E51180085449F /* Test */,
+				EF0042051C1E50DF0085449F /* AppDelegate.h */,
+				EF0042061C1E50DF0085449F /* AppDelegate.m */,
+				EF0042081C1E50DF0085449F /* ViewController.h */,
+				EF0042091C1E50DF0085449F /* ViewController.m */,
+				EF00420B1C1E50DF0085449F /* Main.storyboard */,
+				EF00420E1C1E50DF0085449F /* Assets.xcassets */,
+				EF0042101C1E50DF0085449F /* LaunchScreen.storyboard */,
+				EF0042131C1E50DF0085449F /* Info.plist */,
+				EF0042021C1E50DF0085449F /* Supporting Files */,
+			);
+			path = TestPro;
+			sourceTree = "<group>";
+		};
+		EF0042021C1E50DF0085449F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF0042031C1E50DF0085449F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF00421B1C1E50DF0085449F /* TestProTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF00421C1C1E50DF0085449F /* TestProTests.m */,
+				EF00421E1C1E50DF0085449F /* Info.plist */,
+			);
+			path = TestProTests;
+			sourceTree = "<group>";
+		};
+		EF0042261C1E50DF0085449F /* TestProUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EF0042271C1E50DF0085449F /* TestProUITests.m */,
+				EF0042291C1E50DF0085449F /* Info.plist */,
+			);
+			path = TestProUITests;
+			sourceTree = "<group>";
+		};
+		EF0042351C1E51180085449F /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				EF19C39F1C217F5E0094ABCF /* Util */,
+				EF00423A1C1E64C20085449F /* View */,
+				EF0042361C1E51240085449F /* Model */,
+			);
+			name = Test;
+			sourceTree = "<group>";
+		};
+		EF0042361C1E51240085449F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF0042371C1E51350085449F /* ZGPerson.h */,
+				EF0042381C1E51350085449F /* ZGPerson.m */,
+				EF19C39C1C2173870094ABCF /* ZGTimeIntevel.h */,
+				EF19C39D1C2173870094ABCF /* ZGTimeIntevel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EF00423A1C1E64C20085449F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EFD5C3E01C20076A00F02AE4 /* JBoImageTextLabel.h */,
+				EFD5C3E11C20076A00F02AE4 /* JBoImageTextLabel.m */,
+				EF00423B1C1E64E40085449F /* ZGEmotionFlowLayout.h */,
+				EF00423C1C1E64E40085449F /* ZGEmotionFlowLayout.m */,
+				EF00423E1C1EBDE40085449F /* ZGCoreTextLabel.h */,
+				EF00423F1C1EBDE40085449F /* ZGCoreTextLabel.m */,
+				EF0042411C1EC2BD0085449F /* ZGCoreTextView.h */,
+				EF0042421C1EC2BD0085449F /* ZGCoreTextView.m */,
+				EF19C3931C2149A30094ABCF /* ZGDetailView.h */,
+				EF19C3941C2149A30094ABCF /* ZGDetailView.m */,
+				EF19C3961C2161100094ABCF /* ZGTimerView.h */,
+				EF19C3971C2161100094ABCF /* ZGTimerView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		EF19C39F1C217F5E0094ABCF /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				EF19C3A01C217FB90094ABCF /* ZGTaskManager.h */,
+				EF19C3A11C217FB90094ABCF /* ZGTaskManager.m */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF0041FE1C1E50DF0085449F /* TestPro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF00422C1C1E50DF0085449F /* Build configuration list for PBXNativeTarget "TestPro" */;
+			buildPhases = (
+				EF0041FB1C1E50DF0085449F /* Sources */,
+				EF0041FC1C1E50DF0085449F /* Frameworks */,
+				EF0041FD1C1E50DF0085449F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestPro;
+			productName = TestPro;
+			productReference = EF0041FF1C1E50DF0085449F /* TestPro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF0042171C1E50DF0085449F /* TestProTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF00422F1C1E50DF0085449F /* Build configuration list for PBXNativeTarget "TestProTests" */;
+			buildPhases = (
+				EF0042141C1E50DF0085449F /* Sources */,
+				EF0042151C1E50DF0085449F /* Frameworks */,
+				EF0042161C1E50DF0085449F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF00421A1C1E50DF0085449F /* PBXTargetDependency */,
+			);
+			name = TestProTests;
+			productName = TestProTests;
+			productReference = EF0042181C1E50DF0085449F /* TestProTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EF0042221C1E50DF0085449F /* TestProUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF0042321C1E50DF0085449F /* Build configuration list for PBXNativeTarget "TestProUITests" */;
+			buildPhases = (
+				EF00421F1C1E50DF0085449F /* Sources */,
+				EF0042201C1E50DF0085449F /* Frameworks */,
+				EF0042211C1E50DF0085449F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF0042251C1E50DF0085449F /* PBXTargetDependency */,
+			);
+			name = TestProUITests;
+			productName = TestProUITests;
+			productReference = EF0042231C1E50DF0085449F /* TestProUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF0041F71C1E50DF0085449F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Zong;
+				TargetAttributes = {
+					EF0041FE1C1E50DF0085449F = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					EF0042171C1E50DF0085449F = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = EF0041FE1C1E50DF0085449F;
+					};
+					EF0042221C1E50DF0085449F = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = EF0041FE1C1E50DF0085449F;
+					};
+				};
+			};
+			buildConfigurationList = EF0041FA1C1E50DF0085449F /* Build configuration list for PBXProject "TestPro" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF0041F61C1E50DF0085449F;
+			productRefGroup = EF0042001C1E50DF0085449F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF0041FE1C1E50DF0085449F /* TestPro */,
+				EF0042171C1E50DF0085449F /* TestProTests */,
+				EF0042221C1E50DF0085449F /* TestProUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF0041FD1C1E50DF0085449F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF0042121C1E50DF0085449F /* LaunchScreen.storyboard in Resources */,
+				EF00420F1C1E50DF0085449F /* Assets.xcassets in Resources */,
+				EF00420D1C1E50DF0085449F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF0042161C1E50DF0085449F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF0042211C1E50DF0085449F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF0041FB1C1E50DF0085449F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF00420A1C1E50DF0085449F /* ViewController.m in Sources */,
+				EF19C39E1C2173870094ABCF /* ZGTimeIntevel.m in Sources */,
+				EF0042391C1E51350085449F /* ZGPerson.m in Sources */,
+				EF0042071C1E50DF0085449F /* AppDelegate.m in Sources */,
+				EF19C3951C2149A30094ABCF /* ZGDetailView.m in Sources */,
+				EF0042431C1EC2BD0085449F /* ZGCoreTextView.m in Sources */,
+				EF19C3981C2161100094ABCF /* ZGTimerView.m in Sources */,
+				EF00423D1C1E64E40085449F /* ZGEmotionFlowLayout.m in Sources */,
+				EF0042041C1E50DF0085449F /* main.m in Sources */,
+				EF19C3A21C217FB90094ABCF /* ZGTaskManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF0042141C1E50DF0085449F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF00421D1C1E50DF0085449F /* TestProTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF00421F1C1E50DF0085449F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF0042281C1E50DF0085449F /* TestProUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF00421A1C1E50DF0085449F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF0041FE1C1E50DF0085449F /* TestPro */;
+			targetProxy = EF0042191C1E50DF0085449F /* PBXContainerItemProxy */;
+		};
+		EF0042251C1E50DF0085449F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF0041FE1C1E50DF0085449F /* TestPro */;
+			targetProxy = EF0042241C1E50DF0085449F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF00420B1C1E50DF0085449F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF00420C1C1E50DF0085449F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF0042101C1E50DF0085449F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF0042111C1E50DF0085449F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF00422A1C1E50DF0085449F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF00422B1C1E50DF0085449F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF00422D1C1E50DF0085449F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TestPro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Zong.TestPro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EF00422E1C1E50DF0085449F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TestPro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Zong.TestPro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EF0042301C1E50DF0085449F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TestProTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Zong.TestProTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestPro.app/TestPro";
+			};
+			name = Debug;
+		};
+		EF0042311C1E50DF0085449F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TestProTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Zong.TestProTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestPro.app/TestPro";
+			};
+			name = Release;
+		};
+		EF0042331C1E50DF0085449F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TestProUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Zong.TestProUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TestPro;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		EF0042341C1E50DF0085449F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TestProUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Zong.TestProUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TestPro;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF0041FA1C1E50DF0085449F /* Build configuration list for PBXProject "TestPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF00422A1C1E50DF0085449F /* Debug */,
+				EF00422B1C1E50DF0085449F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF00422C1C1E50DF0085449F /* Build configuration list for PBXNativeTarget "TestPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF00422D1C1E50DF0085449F /* Debug */,
+				EF00422E1C1E50DF0085449F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF00422F1C1E50DF0085449F /* Build configuration list for PBXNativeTarget "TestProTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF0042301C1E50DF0085449F /* Debug */,
+				EF0042311C1E50DF0085449F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF0042321C1E50DF0085449F /* Build configuration list for PBXNativeTarget "TestProUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF0042331C1E50DF0085449F /* Debug */,
+				EF0042341C1E50DF0085449F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF0041F71C1E50DF0085449F /* Project object */;
+}
