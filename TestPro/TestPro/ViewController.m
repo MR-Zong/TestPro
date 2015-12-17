@@ -23,7 +23,6 @@ static NSString *textCellID = @"textCell";
 
 @property (nonatomic,weak) ZGDetailView *detailView;
 
-@property (nonatomic,weak) ZGTimerView *timerView;
 @end
 
 @implementation ViewController
@@ -33,13 +32,17 @@ static NSString *textCellID = @"textCell";
     // Do any additional setup after loading the view, typically from a nib.
 
     
+    
+    
+    
+}
+
+- (void)taskManagerTest
+{
     ZGTimerView *timerView = [[ZGTimerView alloc] init];
-    self.timerView = timerView;
     timerView.frame = self.view.bounds;
     timerView.backgroundColor  = [UIColor yellowColor];
     [self.view addSubview:timerView];
-    
-    
 }
 
 - (void)textTableView

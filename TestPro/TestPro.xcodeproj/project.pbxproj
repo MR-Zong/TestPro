@@ -22,6 +22,7 @@
 		EF19C3981C2161100094ABCF /* ZGTimerView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF19C3971C2161100094ABCF /* ZGTimerView.m */; };
 		EF19C39E1C2173870094ABCF /* ZGTimeIntevel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF19C39D1C2173870094ABCF /* ZGTimeIntevel.m */; };
 		EF19C3A21C217FB90094ABCF /* ZGTaskManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EF19C3A11C217FB90094ABCF /* ZGTaskManager.m */; };
+		EF85AD3B1C22C50E00D9EEB3 /* ZGEmotionLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF85AD3A1C22C50E00D9EEB3 /* ZGEmotionLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,8 @@
 		EF19C39D1C2173870094ABCF /* ZGTimeIntevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGTimeIntevel.m; sourceTree = "<group>"; };
 		EF19C3A01C217FB90094ABCF /* ZGTaskManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGTaskManager.h; sourceTree = "<group>"; };
 		EF19C3A11C217FB90094ABCF /* ZGTaskManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGTaskManager.m; sourceTree = "<group>"; };
+		EF85AD391C22C50E00D9EEB3 /* ZGEmotionLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGEmotionLabel.h; sourceTree = "<group>"; };
+		EF85AD3A1C22C50E00D9EEB3 /* ZGEmotionLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGEmotionLabel.m; sourceTree = "<group>"; };
 		EFD5C3E01C20076A00F02AE4 /* JBoImageTextLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBoImageTextLabel.h; sourceTree = "<group>"; };
 		EFD5C3E11C20076A00F02AE4 /* JBoImageTextLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBoImageTextLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -190,6 +193,8 @@
 		EF00423A1C1E64C20085449F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EF85AD391C22C50E00D9EEB3 /* ZGEmotionLabel.h */,
+				EF85AD3A1C22C50E00D9EEB3 /* ZGEmotionLabel.m */,
 				EFD5C3E01C20076A00F02AE4 /* JBoImageTextLabel.h */,
 				EFD5C3E11C20076A00F02AE4 /* JBoImageTextLabel.m */,
 				EF00423B1C1E64E40085449F /* ZGEmotionFlowLayout.h */,
@@ -347,6 +352,7 @@
 			files = (
 				EF00420A1C1E50DF0085449F /* ViewController.m in Sources */,
 				EF19C39E1C2173870094ABCF /* ZGTimeIntevel.m in Sources */,
+				EF85AD3B1C22C50E00D9EEB3 /* ZGEmotionLabel.m in Sources */,
 				EF0042391C1E51350085449F /* ZGPerson.m in Sources */,
 				EF0042071C1E50DF0085449F /* AppDelegate.m in Sources */,
 				EF19C3951C2149A30094ABCF /* ZGDetailView.m in Sources */,
