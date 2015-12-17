@@ -185,6 +185,8 @@ CGFloat RunDelegateGetWidthCallback(void* refCon)
 {
     if(str == nil || [str isEqual:[NSNull null]])
         return;
+    if (attributedText == nil || [attributedText isEqual:[NSNull null]])
+        return;
     
     NSRange prefixRange = [str rangeOfString:facePrefix];
     NSRange suffixRange = [str rangeOfString:faceSuffix];
@@ -205,7 +207,7 @@ CGFloat RunDelegateGetWidthCallback(void* refCon)
         // 通过faceName 获取表情图片名称
         NSString *imageName = [self getImageNameFromStr:faceName];
         
-
+      
         CTRunDelegateCallbacks imageCallBack;
         imageCallBack.version = kCTRunDelegateVersion1;
         imageCallBack.dealloc = RunDelegateDeallocCallback;
@@ -221,7 +223,7 @@ CGFloat RunDelegateGetWidthCallback(void* refCon)
             NSMutableAttributedString *image = [[NSMutableAttributedString alloc] initWithString:faceSpace];
             [image addAttribute:(NSString*)kCTRunDelegateAttributeName value:(__bridge id)runDelegate range:NSMakeRange(0, faceSpace.length)];
             [image addAttribute:faceImageName value:imageName range:NSMakeRange(0, faceSpace.length)];
-            
+
             [attributedText appendAttributedString:image];
             
             CFRelease(runDelegate);
@@ -245,7 +247,8 @@ CGFloat RunDelegateGetWidthCallback(void* refCon)
 // 获取表情图片名称
 - (NSString*)getImageNameFromStr:(NSString*) str
 {
-  return [EmojiBoardView EmojiImageNameFromCoder:str];
+    
+    return [EmojiBoardView EmojiImageNameFromCoder:str] ? [EmojiBoardView EmojiImageNameFromCoder:str] : @"fanxing_m19.png";
 }
 
 
